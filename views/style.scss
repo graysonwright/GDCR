@@ -1,2 +1,6 @@
 @import "styles/bourbon/bourbon";
 @import "styles/neat/neat";
+
+.content {
+  @include outer-container;
+}
