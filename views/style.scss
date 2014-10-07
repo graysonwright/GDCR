@@ -4,3 +4,8 @@
 .content {
   @include outer-container;
 }
+
+#map {
+  @include fill-parent;
+  height: 400px;
+}
