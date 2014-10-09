@@ -1,6 +1,29 @@
 @import "styles/bourbon/bourbon";
 @import "styles/neat/neat";
 
-.content {
+$dark: #4a4a4a;
+
+html, body {
+  margin: 0;
+}
+
+section {
   @include outer-container;
+}
+
+#hero {
+  height: 90vh;
+  overflow: hidden;
+  background-image: url("mountain-path.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  .header {
+    @include span-columns(6 of 12);
+    @include shift(5);
+    font-family: bree;
+    margin-top: 8em;
+    font-size: 1.6em;
+    color: $dark;
+    text-align: center;
+  }
 }
